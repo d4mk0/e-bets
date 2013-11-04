@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(242, 246, 255);
+}
+
+#base_block {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#menu {
+    text-align: center;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+#money {
+    margin: 0 auto;
+    border: 1px dotted black;
+}
+
+#money td {
+    text-align: center;
+}
+
+form {
+    text-align:center;
+}
+
+#events {
+    margin: 0 auto;
+    border: 1px dotted black;
+}
+
+#events td {
+    border: 1px solid black;
+}
