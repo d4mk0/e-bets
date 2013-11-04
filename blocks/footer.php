@@ -1,3 +1,3 @@
 <div id="footer">
-  it is footer
+  &COPY; e-bets
 </div>
