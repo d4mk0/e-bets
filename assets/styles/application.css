@@ -4,10 +4,42 @@ body {
   font-family: Georgia;
 }
 
+#base_block {
+    width: 700px;
+    margin: 0 auto;
+}
+
 #header {
-    
+    background-color: #94D0FF;
+}
+
+#header .text {
+    font-family: Verdana;
+    text-align: right;
+    font-size: 15px;
+}
+
+#menu {
+    text-align: center;
+}
+
+#header a{
+    color: white;
+    text-decoration: none;
+}
+
+#header a:hover{
+    color: rgb(215, 255, 252);
+    text-decoration: none;
+}
+
+#header #logo {
+    font-family: fantasy;
+    font-size: 76px;
+    text-align: center;
 }
 
 #footer {
-    
+    text-align: center;
+    font-size: 25px;
 }
