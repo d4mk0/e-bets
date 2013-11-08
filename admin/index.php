@@ -11,7 +11,7 @@
     <div id="base_block">
       <? include "blocks/menu.php" ?>
       <div id="content">
-        Администраторская часть
+        <div id="title">Администраторская часть</div>
       </div>
     </div>
   </body>

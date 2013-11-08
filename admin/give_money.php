@@ -18,7 +18,7 @@
             if(mysql_num_rows($result) == 0) echo "Некорректный id пользователя";
             else {
               $row = mysql_fetch_array($result);
-              echo "Добавление денег пользователю ".$row['login'];
+              echo "<div id=\"title\">Добавление денег пользователю ".$row['login']."</div>";
               printf("
               <form action=\"blocks/add_money.php\" method=\"post\">
                 Текущая сумма: <strong>%s</strong>&nbsp;

@@ -11,7 +11,7 @@
     <div id="base_block">
       <? include "blocks/menu.php" ?>
       <div id="content">
-        Деньги пользователей
+        <div id="title">Деньги пользователей</div>
         
         <table id="money">
           <thead>
