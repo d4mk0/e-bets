@@ -25,7 +25,7 @@
             while ($row = mysql_fetch_array($result)) {
               printf("
               <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>
-              ", $row['id'], $row['home'], $row['away'], date("d/m/y H:i", $row['start_time']));
+              ", $row['id'], $row['home'], $row['away'], date("d/m/y H:i", strtotime($row['start_time'])));
             }
           ?>
         </table>
