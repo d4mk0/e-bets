@@ -43,3 +43,74 @@ body {
     text-align: center;
     font-size: 25px;
 }
+
+#line_block {
+    margin: 25px auto;
+}
+
+#line {
+    margin: 10px auto;
+    width: 460px;
+    border: 1px solid black;
+}
+
+#line:hover {
+    border: 1px solid red;
+}
+
+#line .line_header {
+}
+
+#line .teams {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#line .bets {
+    text-align: center;
+    padding: 12px 0;
+}
+
+#line .bet {
+    margin: 0 8px;
+    text-decoration: none;
+    color: green;
+    font-size:12px;
+}
+#line .bet:hover {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#content {
+    text-align: center;
+}
+
+form {
+    margin: 15px;
+}
+
+.versuses {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.choose {
+    color: darkmagenta;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.coeff {
+    color: olivedrab;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#possible_win {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
