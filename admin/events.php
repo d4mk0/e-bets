@@ -24,8 +24,8 @@
             $result = mysql_query($query);
             while ($row = mysql_fetch_array($result)) {
               printf("
-              <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>
-              ", $row['home'], $row['away'], $row['bets'], date("d/m/y H:i", strtotime($row['start_time'])));
+              <tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><a href='add_event.php?update=true&id=%s'>Изменить</a></td></tr>
+              ", $row['home'], $row['away'], $row['bets'], date("d/m/y H:i", strtotime($row['start_time'])), $row['id']);
             }
           ?>
         </table>

@@ -1,5 +1,5 @@
 <?
-  preg_match_all('/(.*) (\d.\d{2})/', $_POST['bets'], $matches);
+  preg_match_all('/(.*) - (\d.\d{2})/', $_POST['bets'], $matches);
   if(empty($matches[1])) echo '<meta http-equiv="refresh" content="0;URL=../add_event.php?error=bets">';
     
   include "connect_db.php";
@@ -12,7 +12,11 @@
       $bets = sprintf("%s %s - %s ", $bets, $matches[1][$i], $matches[2][$i]);
     }
     trim($bets);
-    $query = sprintf("INSERT INTO events (home, away, start_time, bets) VALUES ('%s','%s','%s','%s')", $home, $away, $start_time, $bets);
+    $query = "";
+    if(isset($_POST['update'])) 
+      $query = sprintf("UPDATE events SET home='%s', away='%s', start_time='%s', bets='%s' WHERE id='%s'", $home, $away, $start_time, $bets, $_POST['update']);
+    else
+      $query = sprintf("INSERT INTO events (home, away, start_time, bets) VALUES ('%s','%s','%s','%s')", $home, $away, $start_time, $bets);
     mysql_query($query);
     echo '<meta http-equiv="refresh" content="0;URL=../events.php">';
   } else echo '<meta http-equiv="refresh" content="0;URL=../add_event.php">';
