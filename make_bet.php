@@ -39,6 +39,11 @@
             Ваш исход: <span class='choose'>%s</span>. Коэффициент: <span class='coeff'>%s</span>", $row1['home'], $row1['away'], $_GET['choose'], $_GET['coeff']);
           ?>
           Сумма ставки: <input type='text' name='amount' id='amount' onchange='' onkeyup='(this.value=parseInt(this.value) | 0) && possible_win_change(<? echo $_GET['coeff'] ?>)'><br/>
+          <?
+            printf("<input type='hidden' name='event_id' value='%s'>", $_GET['event_id']);
+            printf("<input type='hidden' name='coeff' value='%s'>", $_GET['coeff']);
+            printf("<input type='hidden' name='choose' value='%s'>", $_GET['choose']);
+          ?>
           Возможный выигрыш: <span id='possible_win'>0</span><br/>
           <input type='submit' value='Принять ставку'>
         </form>

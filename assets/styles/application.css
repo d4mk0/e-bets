@@ -114,3 +114,22 @@ form {
     color: blue;
     font-weight: bold;
 }
+
+#bets_history {
+    
+}
+
+#bets_history .bet {
+    margin: 15px;
+    border: 1px dotted black;
+}
+
+#bets_history .amount {
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+#bets_history .bet .calc {
+    
+}
